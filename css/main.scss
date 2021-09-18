@@ -559,7 +559,8 @@ nav .logo-txt{
     }
     .mid .outer-box .info-blocks{
         flex-wrap: wrap;
-        
+        justify-content: center;
+        align-items: center;
 
     }
     .mid .outer-box .info-blocks .block{
@@ -589,19 +590,39 @@ nav .logo-txt{
     .header .left p{
         display: none;
     }
+    .btn{
+      top: 30px;
+      right: 15px;
+    }
+    .mid, .services{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
     .mid .outer-box .info-blocks .block{
         padding-left: 0;
+        max-width: 100%;
     }
+
+    .services .outer-box .info-blocks,.services .outer-box .info-blocks .block{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      max-width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 450px) {
   .desk-menu{
-    padding-left: 6%;
-    padding-right: 6% 
+    padding-left: 2%;
+    padding-right: 2% 
   }
+
+  
   .mid .outer-box .info-blocks .block .block-img {
     width: 280px;
 }
+
   
   .logo-txt{
     font-size: 1.3rem;
