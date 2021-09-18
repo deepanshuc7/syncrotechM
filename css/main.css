@@ -699,6 +699,10 @@ nav .logo-txt {
     top: 30px;
     right: 15px;
   }
+  .btn.click {
+    top: 30px;
+    right: 15px;
+  }
   .mid, .services {
     padding-left: 5%;
     padding-right: 5%;
