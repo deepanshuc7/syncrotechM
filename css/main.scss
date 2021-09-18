@@ -109,7 +109,7 @@
     height: 45px;
     width: 45px;
     text-align: center;
-    background: #1b1b1b;
+    background: #376e9d;
     border-radius: 3px;
     cursor: pointer;
     transition: left 0.4s ease;
@@ -131,16 +131,17 @@
     width: 250px;
     height: 100%;
     left: -250px;
-    background: black;
+    background: whitesmoke;
     transition: left 0.4s ease;
     padding-left: 0px;
+    opacity: 1;
   }
   .sidebar.show{
     left: 0px;
   }
   
   .sidebar ul{
-    background: black;
+    background: whitesmoke;
     height: 100%;
     width: 100%;
     list-style: none;
@@ -154,7 +155,8 @@
   }
   .sidebar ul li a{
     position: relative;
-    color: white;
+/*     color: white; */
+    color: black;
     text-decoration: none;
     font-size: 18px;
     padding-left: 40px;
@@ -165,12 +167,12 @@
   }
   .sidebar ul li.active a{
     color: #376e9d;
-    background: #1e1e1e;
+    
     border-left-color: #376e9d;
   }
-  .sidebar ul li a:hover{
+/*   .sidebar ul li a:hover{
     background: #1e1e1e;
-  }
+  } */
   .sidebar ul ul{
     position: static;
     display: none;
@@ -188,18 +190,15 @@
   }
   .sidebar ul ul li a{
     font-size: 17px;
-    color: #e6e6e6;
+    color: black;
     padding-left: 80px;
   }
   .sidebar ul li.active ul li a{
-    color: #e6e6e6;
-    background: #1b1b1b;
+    color: black;
+    
     border-left-color: transparent;
   }
-  .sidebar ul ul li a:hover{
-    
-    background: #1e1e1e!important;
-  }
+  
   .sidebar ul li a span{
     position: absolute;
     top: 50%;
@@ -300,8 +299,6 @@ nav .logo-txt{
 } */
 .navbar {
     overflow: hidden;
-   
-    font-family: Arial;
   }
   
   /* Links inside the navbar */
@@ -319,7 +316,7 @@ nav .logo-txt{
     height: 2px;
     display: block;
     margin: auto;
-    background-color: rgb(133, 133, 231);
+    background-color: #376e9d;
     transition: 0.3s;
   }
   .navbar a:hover::after{
@@ -349,7 +346,7 @@ nav .logo-txt{
     height: 2px;
     display: block;
     margin: auto;
-    background-color: rgb(133, 133, 231);
+    background-color: #376e9d;
     transition: 0.3s;
   }
   .dropdown .dropbtn:hover::after{
@@ -595,4 +592,22 @@ nav .logo-txt{
     .mid .outer-box .info-blocks .block{
         padding-left: 0;
     }
+}
+
+@media screen and (max-width: 450px) {
+  .desk-menu{
+    padding-left: 6%;
+    padding-right: 6% 
+  }
+  .mid .outer-box .info-blocks .block .block-img {
+    width: 280px;
+}
+  
+  .logo-txt{
+    font-size: 1.3rem;
+  }
+  
+  .services .outer-box .info-blocks .block p {
+    font-size: 1rem;
+  }
 }
