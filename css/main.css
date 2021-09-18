@@ -91,11 +91,15 @@
   background-color: #f2f2f2;
   padding: 20px;
   margin-top: 2rem;
+  color: #858585;
 }
 
 .header .container h2 {
   padding: 10px;
   margin: auto;
+  font-weight: normal;
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 .top-bar {
