@@ -72,7 +72,7 @@
   /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-.header input[type=submit] {
+.header .button-area button {
   background-color: #376e9d;
   color: white;
   padding: 12px 20px;
@@ -81,8 +81,14 @@
   cursor: pointer;
 }
 
-.header input[type=submit]:hover {
+.header .button-area button:hover {
   background-color: #24537c;
+}
+
+.header .button-area span {
+  font-size: 17px;
+  margin-left: 30px;
+  display: none;
 }
 
 .header .container {
