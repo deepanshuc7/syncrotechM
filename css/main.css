@@ -616,6 +616,92 @@ nav .logo-txt {
   font-size: 1.8rem;
 }
 
+.footer {
+  background-color: whitesmoke;
+  height: 300px;
+  padding: 4% 12% 0 12%;
+}
+
+.footer .outer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer .outer-box .logo-footer {
+  margin-right: 2rem;
+  width: 200px;
+}
+
+.footer .outer-box .logo-footer a {
+  text-decoration: none;
+}
+
+.footer .outer-box .logo-footer a .logo-txt {
+  font-size: 1.3rem;
+  font-family: 'PT Serif', serif;
+  color: #313131;
+}
+
+.footer .outer-box .logo-footer p {
+  font-size: .8rem;
+  font-weight: lighter;
+  color: gray;
+}
+
+.footer .outer-box .info-footer {
+  margin: 0 2rem;
+}
+
+.footer .outer-box .info-footer h3 {
+  display: block;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #4d4d4d;
+}
+
+.footer .outer-box .info-footer p {
+  font-size: .8rem;
+  color: gray;
+}
+
+.footer .outer-box .location-footer h3 {
+  display: block;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #4d4d4d;
+}
+
+.bottom-foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  color: grey;
+  font-size: 0.8rem;
+  background-color: #d4d4d4;
+}
+
+.bottom-foot a {
+  text-decoration: none;
+  color: grey;
+}
+
+.bottom-foot p {
+  display: block;
+  padding-left: 12%;
+}
+
 @media screen and (max-width: 1200px) {
   .mid .outer-box .info-blocks .block .block-img {
     width: 250px;
@@ -724,6 +810,20 @@ nav .logo-txt {
             align-items: center;
     text-align: center;
     max-width: 100%;
+  }
+  .footer {
+    padding: 4% 8% 4% 8%;
+  }
+  .footer .outer-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer .outer-box .info-footer {
+    margin: 2rem 0;
+    width: 100%;
+  }
+  .bottom-foot {
+    height: 40px;
   }
 }
 

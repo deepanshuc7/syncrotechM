@@ -504,6 +504,8 @@ nav .logo-txt{
 
 }
 
+
+
 .project{
     background: /* linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , */url(../img/img5.jpg)  center  ;
     background-color: #242424;
@@ -516,6 +518,87 @@ nav .logo-txt{
      padding: 2rem 0;
      font-size: 1.8rem;
     }
+}
+
+.footer{
+  background-color: whitesmoke;
+  height: 300px;
+ 
+  
+  padding: 4% 12% 0 12%;
+  
+  .outer-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    
+    .logo-footer{
+      margin-right: 2rem;
+      width: 200px;
+      a{
+        text-decoration: none;
+      
+        .logo-txt{
+          font-size: 1.3rem;
+          font-family: 'PT Serif', serif;
+          
+          color: rgb(49, 49, 49);
+        }
+      }
+      p{
+        font-size: .8rem;
+       font-weight: lighter;
+        color: gray;
+      }
+      
+    }
+
+    .info-footer{
+      margin:0 2rem;
+      h3{
+        display: block;
+        font-weight: 400;
+        padding-bottom: 1rem;
+        font-size: 1.3rem;
+        color: rgb(77, 77, 77);
+      }
+      p{
+        font-size: .8rem;
+       
+        color: gray;
+      }
+    }
+    .location-footer{
+      h3{
+        display: block;
+        font-weight: 400;
+        font-size: 1.3rem;
+        color: rgb(77, 77, 77);
+      }
+    }
+   
+  }
+
+}
+.bottom-foot{
+  display: flex;
+  align-items: center;
+  
+  height: 30px;
+  color: grey;
+  font-size: 0.8rem;
+  
+  background-color: rgb(212, 212, 212);
+  a{
+    text-decoration: none;
+    color: grey;
+  }
+p{
+  display: block;
+  padding-left: 12%;
+}
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -585,8 +668,6 @@ nav .logo-txt{
 }
 @media screen and (max-width: 500px){
     .header{
-        
-      
         padding-bottom: 2rem;
         padding: 2rem;
        
@@ -617,6 +698,20 @@ nav .logo-txt{
       text-align: center;
       max-width: 100%;
     }
+    .footer{
+      padding: 4% 8% 4% 8%;
+    }
+
+    .footer .outer-box{
+      flex-wrap: wrap;
+    }
+    .footer .outer-box .info-footer {
+      margin: 2rem 0;
+      width: 100%;
+  }
+  .bottom-foot{
+    height: 40px;
+  }
 
 }
 
