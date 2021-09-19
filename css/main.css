@@ -52,7 +52,7 @@
   width: 26rem;
 }
 
-.header #name, .header #email, .header #number, .header select, .header textarea {
+.header #name, .header #email, .header #phone, .header select, .header textarea {
   width: 100%;
   /* Full width */
   padding: 12px;
