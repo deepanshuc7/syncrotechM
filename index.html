@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <script src="form.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script><link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Syncrotech Machines | Home</title>
 </head>
@@ -93,7 +93,7 @@
                 </p>
             </div>
             <div class="container">
-                <form action="#">
+                <form action="POST" data-netlify="true">
                     <h2>Request a Quote</h2>
                   <label for="name"> Name</label>
                   <input type="text" id="name" name="name" placeholder="Your name..">
@@ -110,7 +110,7 @@
                   <!-- <input type="submit" value="Submit"> -->
                   <div class="button-area">
                     <button type="submit">Send Message</button>
-                    <span></span>
+                    
                   </div>
               
                 </form>
@@ -186,6 +186,8 @@
             <p>We would love to help you succeed through precision manufacturing of your machined components!</p>
     </section>
 
+
+    <script src="form.js"></script>
     <script>
         $('.btn').click(function(){
           $(this).toggleClass("click");
