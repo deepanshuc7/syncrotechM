@@ -401,7 +401,7 @@ nav .logo-txt{
     height: 2px;
     display: block;
     margin-top: 0.5rem;
-    background-color: rgb(133, 133, 231);   
+    background-color: #376e9d;   
 }
 
 .mid{
@@ -518,6 +518,24 @@ nav .logo-txt{
      padding: 2rem 0;
      font-size: 1.8rem;
     }
+    input{
+      
+        padding: 5px 20px;
+        font-size: 1rem;
+        border: 1px solid ;
+        border-radius: 3px;
+        color: #376e9d;
+        margin-top: 2rem;
+        background-color: white;
+        
+    
+    }
+    input:hover{
+      background-color: #376e9d;
+      color: white;
+      
+      
+    }
 }
 
 .footer{
@@ -534,8 +552,8 @@ nav .logo-txt{
     
     
     .logo-footer{
-      margin-right: 2rem;
-      width: 200px;
+     
+      width: 250px;
       a{
         text-decoration: none;
       
@@ -544,6 +562,7 @@ nav .logo-txt{
           font-family: 'PT Serif', serif;
           
           color: rgb(49, 49, 49);
+          color: #24537c;
         }
       }
       p{
@@ -551,11 +570,15 @@ nav .logo-txt{
        font-weight: lighter;
         color: gray;
       }
+      hr{
+        border-top: 1px solid #376e9d;
+      }
       
     }
 
     .info-footer{
-      margin:0 2rem;
+      padding-left: 4rem;
+      width: 300px;
       h3{
         display: block;
         font-weight: 400;
@@ -570,10 +593,13 @@ nav .logo-txt{
       }
     }
     .location-footer{
+      width: 300px;
+      padding-left: 2rem;
       h3{
         display: block;
         font-weight: 400;
         font-size: 1.3rem;
+        padding-bottom: 1rem;
         color: rgb(77, 77, 77);
       }
       p{
@@ -591,13 +617,14 @@ nav .logo-txt{
   
   height: 30px;
   color: grey;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   
   background-color: rgb(212, 212, 212);
   a{
     text-decoration: none;
     color: grey;
   }
+  
 p{
   display: block;
   padding-left: 12%;
@@ -703,7 +730,8 @@ p{
       max-width: 100%;
     }
     .footer{
-      padding: 4% 8% 4% 8%;
+      padding: 6% 8% 4% 8%;
+      height: 400px;
     }
 
     .footer .outer-box{

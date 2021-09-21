@@ -465,7 +465,7 @@ nav .logo-txt {
   height: 2px;
   display: block;
   margin-top: 0.5rem;
-  background-color: #8585e7;
+  background-color: #376e9d;
 }
 
 .mid {
@@ -616,6 +616,21 @@ nav .logo-txt {
   font-size: 1.8rem;
 }
 
+.project input {
+  padding: 5px 20px;
+  font-size: 1rem;
+  border: 1px solid;
+  border-radius: 3px;
+  color: #376e9d;
+  margin-top: 2rem;
+  background-color: white;
+}
+
+.project input:hover {
+  background-color: #376e9d;
+  color: white;
+}
+
 .footer {
   background-color: whitesmoke;
   height: 300px;
@@ -635,8 +650,7 @@ nav .logo-txt {
 }
 
 .footer .outer-box .logo-footer {
-  margin-right: 2rem;
-  width: 200px;
+  width: 250px;
 }
 
 .footer .outer-box .logo-footer a {
@@ -647,6 +661,7 @@ nav .logo-txt {
   font-size: 1.3rem;
   font-family: 'PT Serif', serif;
   color: #313131;
+  color: #24537c;
 }
 
 .footer .outer-box .logo-footer p {
@@ -655,8 +670,13 @@ nav .logo-txt {
   color: gray;
 }
 
+.footer .outer-box .logo-footer hr {
+  border-top: 1px solid #376e9d;
+}
+
 .footer .outer-box .info-footer {
-  margin: 0 2rem;
+  padding-left: 4rem;
+  width: 300px;
 }
 
 .footer .outer-box .info-footer h3 {
@@ -672,10 +692,16 @@ nav .logo-txt {
   color: gray;
 }
 
+.footer .outer-box .location-footer {
+  width: 300px;
+  padding-left: 2rem;
+}
+
 .footer .outer-box .location-footer h3 {
   display: block;
   font-weight: 400;
   font-size: 1.3rem;
+  padding-bottom: 1rem;
   color: #4d4d4d;
 }
 
@@ -693,7 +719,7 @@ nav .logo-txt {
           align-items: center;
   height: 30px;
   color: grey;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   background-color: #d4d4d4;
 }
 
@@ -817,7 +843,8 @@ nav .logo-txt {
     max-width: 100%;
   }
   .footer {
-    padding: 4% 8% 4% 8%;
+    padding: 6% 8% 4% 8%;
+    height: 400px;
   }
   .footer .outer-box {
     -ms-flex-wrap: wrap;
