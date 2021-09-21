@@ -737,9 +737,10 @@ p{
     .footer .outer-box{
       flex-wrap: wrap;
     }
-    .footer .outer-box .info-footer {
+    .footer .outer-box .info-footer, .footer .outer-box .location-footer {
       margin: 2rem 0;
       width: 100%;
+      padding: 0;
   }
   .bottom-foot{
     height: 40px;
