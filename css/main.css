@@ -495,8 +495,6 @@ nav .logo-txt {
 
 .mid .mid-info .left {
   padding-right: 2rem;
-  position: sticky;
-  position: -webkit-sticky;
 }
 
 .mid .mid-info .left .side-nav-bar {
