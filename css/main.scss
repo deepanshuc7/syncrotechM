@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 140px;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+   
 }
+
 
 .header {
     display: flex;
@@ -142,6 +149,7 @@
   }
   .sidebar.show{
     left: 0px;
+    
   }
   
   .sidebar ul{
@@ -181,10 +189,14 @@
     position: static;
     display: none;
   }
-  .sidebar ul .feat-show.show{
+  .sidebar ul .serv-show.show{
     display: block;
   }
-  .sidebar ul .serv-show.show1{
+  .sidebar ul .about-show.show1{
+    display: block;
+    width: 200px;
+  }
+  .sidebar ul .prod-show.show2{
     display: block;
     width: 200px;
   }
@@ -392,6 +404,8 @@ nav .logo-txt{
     display: block;
   }
   .title{
+    display: block;
+    padding-bottom: 2rem;
     font-size: 1.6rem;
     font-weight: 600;
 }
@@ -406,10 +420,227 @@ nav .logo-txt{
 
 .mid{
     padding: 6% 12%;
-    .outer-box{
+
+    .mid-info{
+      display: flex;
+      .left{
+        padding-right: 2rem;
+        position: sticky;
+        position: -webkit-sticky;
+        .side-nav-bar{
+        width: 300px;
+        background-color: whitesmoke;
+      /*   height: 200px; */
+        border-radius: 2px;
+        padding: 2rem;
+      
+        h3{
+          display: block;
+          color: grey;
+          padding-bottom: 0.5rem;
+          font-weight: normal;
+        }
+        ul{
+
+        list-style: none;
         
+        li {
+          font-size: .9rem;
+          display: block;
+          padding: .8rem 0;
+       /*    border-bottom: 1px solid #d1d1d1; */
+          
+          a{
+            color: #376e9d;
+            text-decoration: none;
+          }
+          
+          
+          i{
+            color: #376e9d;
+            padding-right: 1rem;
+          }
+        }
+        hr{
+          border-style: none;
+          border-bottom: 1px solid #d1d1d1;
+        }
+        
+      }
+
+      }
+      .contact-cta{
+        border-radius: 2px;
+        padding: 2rem;
+        margin-top: 2rem;
+        width: 300px;
+        background-color: whitesmoke;
+        h3{
+          display: block;
+          color: grey;
+          padding-bottom: 0.5rem;
+          font-weight: normal;
+        }
+        p{
+          display: block;
+          padding-bottom: 1.2rem;
+          color: #376e9d;
+        }
+        .cta{
+          text-decoration: none;
+          
+          background-color: #376e9d;
+          color: white;
+          padding: 12px 20px;
+        
+          border-radius: 4px;
+        
+        }
+        .cta:hover{
+          background-color: #24537c;
+        }
+      }
+      }
+      .right{
+        width: 100%;
+        .right-container{
+          padding-bottom: 5rem;
+          .img-container{
+            background-image: url("../img/AboutUs.jpg");
+            height: 450px;
+            width: 100%;
+            background-color: honeydew;
+          }
+          .txt-desc{
+            display: block;
+            padding-top: 2rem;
+            color: grey;
+            font-size: .9rem;
+          
+            
+          }
+          .box{
+            background-color: whitesmoke;
+            width: 100%;
+            
+            padding: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ececec;
+            h3{
+              display: block;
+              
+              padding: 1rem;
+              padding-top: 0;
+              font-weight: normal;
+              color: rgb(99, 99, 99);
+            }
+            hr{
+              border-style: none;
+              border-bottom:1px solid #d1d1d1
+            }
+            .inner-box{
+              display: flex;
+              flex-direction: row;
+              ul{
+                padding: 2rem;
+                width: 50%;
+                color: grey;
+                li{
+                  font-size: 0.9rem;
+                  padding-bottom: 0.8rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      
+      iframe{
+        width: 800px;
+         height:450px;
+      }
+      .mid-contact{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        padding: 0 1rem;
+        
+        width: 300px;
+        background-color: whitesmoke;
+        border-radius: 2px;
+        color: rgb(59, 59, 59);
+        .mid-contact-box:last-child{
+          border: none;
+        }
+        .mid-contact-box{
+          padding: 2rem 2rem;
+          border-bottom: 1px dotted rgb(211, 211, 211);
+          h3{
+            display: block;
+            padding-bottom: 1rem;
+          }
+          i{
+            margin-left: -2rem;
+            padding-right: 1rem;
+          }
+          p{
+            color: gray;
+            font-size: .85rem;
+          }
+        }
+        
+        
+      }
+    }
+    #name,#email,#phone, select, textarea {
+      width: 100%; /* Full width */
+      padding: 12px; /* Some padding */ 
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 4px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 6px; /* Add a top margin */
+      margin-bottom: 15px; /* Bottom margin */
+      resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+     
+  }
+    
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+      background-color: #376e9d;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+      background-color: #24537c;
+    }
+    
+    /* Add a background color and some padding around the form */
+    .container {
+        max-width: 770px;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 2rem;
+        margin-top: 2rem;
+        color: rgb(133, 133, 133);
+      
+      h2{
+          padding:10px ;
+          margin: auto;
+          font-weight: normal;
+          font-size: 1.3rem;
+          text-align: center;
+      }
+    }
+    .outer-box{
         min-width: 70%;
     
+
+
 .info-blocks{
     padding-top: 4rem;
     
@@ -675,6 +906,30 @@ p{
      
         flex-wrap: wrap;
     }
+
+    
+    .mid .mid-info{
+      flex-wrap: wrap;
+    }
+
+.mid .mid-info .left{
+  display: none;
+}
+    .mid .mid-info iframe{
+      padding-bottom: 2rem;
+    }
+    .mid .mid-info .mid-contact{
+      flex-direction: row;
+      padding-left: 1rem;
+      margin-left: 0;
+      width: 100%;
+    }
+    .mid .mid-info .mid-contact .mid-contact-box{
+      flex: 1;
+    }
+    .mid .mid-info .right .right-container .box .inner-box ul {
+      width: 100%;
+    }
     .mid .outer-box .info-blocks{
         flex-wrap: wrap;
         justify-content: center;
@@ -698,6 +953,7 @@ p{
     }
 }
 @media screen and (max-width: 500px){
+  
     .header{
         padding-bottom: 2rem;
         padding: 2rem;
@@ -713,6 +969,13 @@ p{
     .btn.click{
       top: 30px;
       right: 15px;
+    }
+    .mid .mid-info .right .right-container .box .inner-box ul{
+      width: 100%;
+    }
+    .mid .mid-info .mid-contact{
+      flex-direction: column;
+      padding: 0 2rem;
     }
     .mid, .services{
       padding-left: 5%;
@@ -744,6 +1007,8 @@ p{
   }
   .bottom-foot{
     height: 40px;
+    
+
   }
 
 }

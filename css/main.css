@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 140px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -213,11 +218,16 @@
   display: none;
 }
 
-.sidebar ul .feat-show.show {
+.sidebar ul .serv-show.show {
   display: block;
 }
 
-.sidebar ul .serv-show.show1 {
+.sidebar ul .about-show.show1 {
+  display: block;
+  width: 200px;
+}
+
+.sidebar ul .prod-show.show2 {
   display: block;
   width: 200px;
 }
@@ -455,6 +465,8 @@ nav .logo-txt {
 }
 
 .title {
+  display: block;
+  padding-bottom: 2rem;
   font-size: 1.6rem;
   font-weight: 600;
 }
@@ -470,6 +482,254 @@ nav .logo-txt {
 
 .mid {
   padding: 6% 12%;
+  /* Style the submit button with a specific background color etc */
+  /* When moving the mouse over the submit button, add a darker green color */
+  /* Add a background color and some padding around the form */
+}
+
+.mid .mid-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mid .mid-info .left {
+  padding-right: 2rem;
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+.mid .mid-info .left .side-nav-bar {
+  width: 300px;
+  background-color: whitesmoke;
+  /*   height: 200px; */
+  border-radius: 2px;
+  padding: 2rem;
+}
+
+.mid .mid-info .left .side-nav-bar h3 {
+  display: block;
+  color: grey;
+  padding-bottom: 0.5rem;
+  font-weight: normal;
+}
+
+.mid .mid-info .left .side-nav-bar ul {
+  list-style: none;
+}
+
+.mid .mid-info .left .side-nav-bar ul li {
+  font-size: .9rem;
+  display: block;
+  padding: .8rem 0;
+  /*    border-bottom: 1px solid #d1d1d1; */
+}
+
+.mid .mid-info .left .side-nav-bar ul li a {
+  color: #376e9d;
+  text-decoration: none;
+}
+
+.mid .mid-info .left .side-nav-bar ul li i {
+  color: #376e9d;
+  padding-right: 1rem;
+}
+
+.mid .mid-info .left .side-nav-bar ul hr {
+  border-style: none;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.mid .mid-info .left .contact-cta {
+  border-radius: 2px;
+  padding: 2rem;
+  margin-top: 2rem;
+  width: 300px;
+  background-color: whitesmoke;
+}
+
+.mid .mid-info .left .contact-cta h3 {
+  display: block;
+  color: grey;
+  padding-bottom: 0.5rem;
+  font-weight: normal;
+}
+
+.mid .mid-info .left .contact-cta p {
+  display: block;
+  padding-bottom: 1.2rem;
+  color: #376e9d;
+}
+
+.mid .mid-info .left .contact-cta .cta {
+  text-decoration: none;
+  background-color: #376e9d;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+.mid .mid-info .left .contact-cta .cta:hover {
+  background-color: #24537c;
+}
+
+.mid .mid-info .right {
+  width: 100%;
+}
+
+.mid .mid-info .right .right-container {
+  padding-bottom: 5rem;
+}
+
+.mid .mid-info .right .right-container .img-container {
+  background-image: url("../img/AboutUs.jpg");
+  height: 450px;
+  width: 100%;
+  background-color: honeydew;
+}
+
+.mid .mid-info .right .right-container .txt-desc {
+  display: block;
+  padding-top: 2rem;
+  color: grey;
+  font-size: .9rem;
+}
+
+.mid .mid-info .right .right-container .box {
+  background-color: whitesmoke;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ececec;
+}
+
+.mid .mid-info .right .right-container .box h3 {
+  display: block;
+  padding: 1rem;
+  padding-top: 0;
+  font-weight: normal;
+  color: #636363;
+}
+
+.mid .mid-info .right .right-container .box hr {
+  border-style: none;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.mid .mid-info .right .right-container .box .inner-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mid .mid-info .right .right-container .box .inner-box ul {
+  padding: 2rem;
+  width: 50%;
+  color: grey;
+}
+
+.mid .mid-info .right .right-container .box .inner-box ul li {
+  font-size: 0.9rem;
+  padding-bottom: 0.8rem;
+}
+
+.mid .mid-info iframe {
+  width: 800px;
+  height: 450px;
+}
+
+.mid .mid-info .mid-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2rem;
+  padding: 0 1rem;
+  width: 300px;
+  background-color: whitesmoke;
+  border-radius: 2px;
+  color: #3b3b3b;
+}
+
+.mid .mid-info .mid-contact .mid-contact-box:last-child {
+  border: none;
+}
+
+.mid .mid-info .mid-contact .mid-contact-box {
+  padding: 2rem 2rem;
+  border-bottom: 1px dotted lightgray;
+}
+
+.mid .mid-info .mid-contact .mid-contact-box h3 {
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.mid .mid-info .mid-contact .mid-contact-box i {
+  margin-left: -2rem;
+  padding-right: 1rem;
+}
+
+.mid .mid-info .mid-contact .mid-contact-box p {
+  color: gray;
+  font-size: .85rem;
+}
+
+.mid #name, .mid #email, .mid #phone, .mid select, .mid textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 15px;
+  /* Bottom margin */
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.mid input[type=submit] {
+  background-color: #376e9d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mid input[type=submit]:hover {
+  background-color: #24537c;
+}
+
+.mid .container {
+  max-width: 770px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 2rem;
+  margin-top: 2rem;
+  color: #858585;
+}
+
+.mid .container h2 {
+  padding: 10px;
+  margin: auto;
+  font-weight: normal;
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 .mid .outer-box {
@@ -777,6 +1037,33 @@ nav .logo-txt {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .mid .mid-info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mid .mid-info .left {
+    display: none;
+  }
+  .mid .mid-info iframe {
+    padding-bottom: 2rem;
+  }
+  .mid .mid-info .mid-contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-left: 1rem;
+    margin-left: 0;
+    width: 100%;
+  }
+  .mid .mid-info .mid-contact .mid-contact-box {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .mid .mid-info .right .right-container .box .inner-box ul {
+    width: 100%;
+  }
   .mid .outer-box .info-blocks {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -823,6 +1110,16 @@ nav .logo-txt {
   .btn.click {
     top: 30px;
     right: 15px;
+  }
+  .mid .mid-info .right .right-container .box .inner-box ul {
+    width: 100%;
+  }
+  .mid .mid-info .mid-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 2rem;
   }
   .mid, .services {
     padding-left: 5%;
