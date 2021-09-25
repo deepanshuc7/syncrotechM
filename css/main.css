@@ -484,7 +484,7 @@ nav .logo-txt {
   position: relative;
   width: 100%;
   height: 180px;
-  background-image: url("../img/stripeImage_3-1.png");
+  background: url("../img/stripeImage_3-1.png") center;
 }
 
 .top-img .top-txt {
