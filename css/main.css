@@ -240,7 +240,7 @@ html {
 .sidebar ul ul li a {
   font-size: 17px;
   color: black;
-  padding-left: 80px;
+  padding-left: 60px;
 }
 
 .sidebar ul li.active ul li a {
@@ -474,6 +474,30 @@ nav .logo-txt {
 .title::after {
   content: '';
   width: 10%;
+  height: 2px;
+  display: block;
+  margin-top: 0.5rem;
+  background-color: #376e9d;
+}
+
+.top-img {
+  width: 100%;
+  height: 180px;
+  background-image: url("../img/stripeImage_3-1.png");
+}
+
+.top-img .top-txt {
+  position: relative;
+  display: block;
+  left: 13%;
+  top: 35%;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.top-img .top-txt::after {
+  content: '';
+  width: 5rem;
   height: 2px;
   display: block;
   margin-top: 0.5rem;
@@ -1109,6 +1133,9 @@ nav .logo-txt {
   .btn.click {
     top: 30px;
     right: 15px;
+  }
+  .top-img .top-txt {
+    left: 5%;
   }
   .mid .mid-info .right .right-container .box .inner-box ul {
     width: 100%;

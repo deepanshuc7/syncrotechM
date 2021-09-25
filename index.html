@@ -17,25 +17,27 @@
             <p> <i class="fas fa-phone"></i> +91 8208110443</p>
             <p> <i class="fas fa-envelope"></i> sales@syncrotechm.com</p>    
         </div>
-        
+
+<!-- ================= NAV ========================== -->
+
         
         <nav class="desk-menu">
-            <a href=""><img class="logo" src="./img/logo_1.1_.png" alt=""> <p class="logo-txt">Syncrotech Machines </p></a>
+            <a href="./index.html"><img class="logo" src="./img/logo_1.1_.png" alt=""> <p class="logo-txt">Syncrotech Machines </p></a>
            
             <div class="navbar">
               <a href="index.html">Home</a>
               
               <div class="dropdown">
-                <button class="dropbtn">Services <i class="fas fa-caret-down"></i>
+                <button class="dropbtn" onclick="document.location='./services.html'" style="cursor: pointer;">Services <i class="fas fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
+                  <a href="./services.html#gear">Gear Cutting</a>
+                  <a href="./services.html#cnc">CNC Machining</a>
+                  <a href="./services.html#eng">Engineering</a>
                 </div>
               </div>
               <div class="dropdown">
-                <button class="dropbtn">About Us <i class="fas fa-caret-down"></i>
+                <button class="dropbtn" onclick="document.location='./about-us.html'" style="cursor: pointer;">About Us <i class="fas fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
                   <a href="./about-us.html#who-we-are">About Us</a>
@@ -57,14 +59,15 @@
                   <nav class="sidebar">
                    
                     <ul>
-                      <li class="active"><a href="#">Home</a></li>
+                      <li class="active"><a href="./index.html">Home</a></li>
                       <li>
                         <a href="#" class="serv-btn">Services
                           <span class="fas fa-caret-down first"></span>
                         </a>
                         <ul class="serv-show">
-                          <li><a href="#">Link 1</a></li>
-                          <li><a href="#">Link 2</a></li>
+                          <li><a href="./services.html#gear">Gear Cutting</a></li>
+                          <li><a href="./services.html#cnc">CNC Machining</a></li>
+                          <li><a href="./services.html#eng">Engineering</a></li>
                         </ul>
                       </li>
                       <li>
@@ -95,6 +98,8 @@
             </div>
               
         </nav>
+                <!-- ================= NAV ENDED========================== -->
+
       
         <section class="header">
             <div class="left">
@@ -127,6 +132,7 @@
                 </form>
               </div>
         </section>
+        <!-- ================= MAIN CONTENT========================== -->
     </section>
     <section class="mid">
         <div class="outer-box">
@@ -217,6 +223,8 @@
       <p>© Copyright - Syncrotech Machines  All rights reserved   |   Design & Developed by <a href="https://deepanshu.space">Deepanshu C.</a></p>
       
     </div>
+            <!-- ================= MAIN CONTENT ENDED========================== -->
+
 
 
     <script>
@@ -239,6 +247,7 @@
           $('nav ul li').click(function(){
             $(this).addClass("active").siblings().removeClass("active");
           });
+
         </script>
 </body>
 </html>
